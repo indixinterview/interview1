@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<sitemanifest>
-  <IisApp path="D:\indix\Indix.WebApi\obj\Debug\Package\PackageTmp" />
-  <setAcl path="D:\indix\Indix.WebApi\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
-  <setAcl path="D:\indix\Indix.WebApi\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
-</sitemanifest>

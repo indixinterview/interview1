@@ -1,9 +1,0 @@
-D:\indix\Indix.DataModel\bin\Debug\Indix.DataModel.dll.config
-D:\indix\Indix.DataModel\bin\Debug\Indix.DataModel.dll
-D:\indix\Indix.DataModel\bin\Debug\Indix.DataModel.pdb
-D:\indix\Indix.DataModel\bin\Debug\EntityFramework.dll
-D:\indix\Indix.DataModel\bin\Debug\EntityFramework.SqlServer.dll
-D:\indix\Indix.DataModel\bin\Debug\EntityFramework.xml
-D:\indix\Indix.DataModel\bin\Debug\EntityFramework.SqlServer.xml
-D:\indix\Indix.DataModel\obj\Debug\Indix.DataModel.dll
-D:\indix\Indix.DataModel\obj\Debug\Indix.DataModel.pdb
