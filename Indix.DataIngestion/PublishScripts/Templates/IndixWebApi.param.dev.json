@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "indix"
+  },
+  "hostingPlanName": {
+    "value": "Default0"
+  },
+  "siteLocation": {
+    "value": "West US"
+  },
+  "sku": {
+    "value": "Shared"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "fbd3d523-cf96-4839-bbe4-9ea6c9b24066"
+  },
+  "resourceGroup": {
+    "value": "Default-Web-WestUS"
+  }
+}

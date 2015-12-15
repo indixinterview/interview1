@@ -1,0 +1,7 @@
+D:\indix\Indix.ViewModels\bin\Debug\Indix.ViewModels.dll
+D:\indix\Indix.ViewModels\bin\Debug\Indix.ViewModels.pdb
+D:\indix\Indix.ViewModels\obj\Debug\Indix.ViewModels.csprojResolveAssemblyReference.cache
+D:\indix\Indix.ViewModels\obj\Debug\Indix.ViewModels.dll
+D:\indix\Indix.ViewModels\obj\Debug\Indix.ViewModels.pdb
+D:\indix\Indix.ViewModels\bin\Debug\Newtonsoft.Json.dll
+D:\indix\Indix.ViewModels\bin\Debug\Newtonsoft.Json.xml

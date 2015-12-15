@@ -1,0 +1,13 @@
+D:\indix\Indix.Plugins.Test\bin\Debug\Indix.Plugins.Test.dll
+D:\indix\Indix.Plugins.Test\bin\Debug\Indix.Plugins.Test.pdb
+D:\indix\Indix.Plugins.Test\bin\Debug\Indix.Plugins.dll
+D:\indix\Indix.Plugins.Test\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\indix\Indix.Plugins.Test\bin\Debug\Microsoft.Office.Tools.Excel.v4.0.Utilities.dll
+D:\indix\Indix.Plugins.Test\bin\Debug\Newtonsoft.Json.dll
+D:\indix\Indix.Plugins.Test\bin\Debug\Indix.Plugins.pdb
+D:\indix\Indix.Plugins.Test\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+D:\indix\Indix.Plugins.Test\bin\Debug\Microsoft.Office.Tools.Excel.v4.0.Utilities.xml
+D:\indix\Indix.Plugins.Test\bin\Debug\Newtonsoft.Json.xml
+D:\indix\Indix.Plugins.Test\obj\Debug\Indix.Plugins.Test.csprojResolveAssemblyReference.cache
+D:\indix\Indix.Plugins.Test\obj\Debug\Indix.Plugins.Test.dll
+D:\indix\Indix.Plugins.Test\obj\Debug\Indix.Plugins.Test.pdb

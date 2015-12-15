@@ -1,0 +1,1 @@
+D:\indix\Indix.DataIngestion\artifacts\obj\Indix.WebApi\Debug\Indix.WebApi.xprojResolveAssemblyReference.cache

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IndixModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="IndixEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categories" EntityType="IndixModel.Category" />
+    <EntitySet Name="ProductInformations" EntityType="IndixModel.ProductInformation" />
+    <EntitySet Name="Stores" EntityType="IndixModel.Store" />
+    <AssociationSet Name="FK_ProductInformation_ToCategory" Association="IndixModel.FK_ProductInformation_ToCategory">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="ProductInformation" EntitySet="ProductInformations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductInformation_ToStore" Association="IndixModel.FK_ProductInformation_ToStore">
+      <End Role="Store" EntitySet="Stores" />
+      <End Role="ProductInformation" EntitySet="ProductInformations" />
+    </AssociationSet>
+    <EntitySet Name="CategoryComparisonByStores" EntityType="IndixModel.CategoryComparisonByStore" />
+  </EntityContainer>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TopLevelCategory" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SubCategory" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ProductInformations" Relationship="IndixModel.FK_ProductInformation_ToCategory" FromRole="Category" ToRole="ProductInformation" />
+  </EntityType>
+  <EntityType Name="ProductInformation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StoreId" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Category" Relationship="IndixModel.FK_ProductInformation_ToCategory" FromRole="ProductInformation" ToRole="Category" />
+    <NavigationProperty Name="Store" Relationship="IndixModel.FK_ProductInformation_ToStore" FromRole="ProductInformation" ToRole="Store" />
+  </EntityType>
+  <EntityType Name="Store">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ProductInformations" Relationship="IndixModel.FK_ProductInformation_ToStore" FromRole="Store" ToRole="ProductInformation" />
+  </EntityType>
+  <Association Name="FK_ProductInformation_ToCategory">
+    <End Type="IndixModel.Category" Role="Category" Multiplicity="1" />
+    <End Type="IndixModel.ProductInformation" Role="ProductInformation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductInformation">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductInformation_ToStore">
+    <End Type="IndixModel.Store" Role="Store" Multiplicity="1" />
+    <End Type="IndixModel.ProductInformation" Role="ProductInformation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Store">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductInformation">
+        <PropertyRef Name="StoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="CategoryComparisonByStore">
+    <Key>
+      <PropertyRef Name="toplevelcategory" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="toplevelcategory" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Decimal" Precision="38" Scale="6" />
+  </EntityType>
+</Schema>

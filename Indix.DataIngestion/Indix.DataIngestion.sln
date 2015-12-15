@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indix.DataIngestion", "Indix.DataIngestion\Indix.DataIngestion.csproj", "{BD0982FC-BA73-46D7-AF63-F59E829FF10B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indix.DataModel", "..\Indix.DataModel\Indix.DataModel.csproj", "{347F9CD1-F6AD-45DA-A78E-07F31FD66084}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{343DE19F-5910-4121-AA01-6AEB866EBB2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{40AFA0E1-C8BB-4EDC-8D07-5BF81C3C13F2}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{7982696E-C00B-4AC8-80F1-367BFE1ECA7D}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\IndixWebApi.json = PublishScripts\Templates\IndixWebApi.json
+		PublishScripts\Templates\IndixWebApi.param.dev.json = PublishScripts\Templates\IndixWebApi.param.dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indix.WebApi", "..\Indix.WebApi\Indix.WebApi.csproj", "{A2722DE7-6A98-46DE-B587-A81F1839E7EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indix.Test", "..\Indix.Test\Indix.Test.csproj", "{8671853E-2555-4F7C-9E43-72B3D77556C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indix.ViewModels", "..\Indix.ViewModels\Indix.ViewModels.csproj", "{90BF74D0-1931-4C40-AEAE-433DA2B4428B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD0982FC-BA73-46D7-AF63-F59E829FF10B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD0982FC-BA73-46D7-AF63-F59E829FF10B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD0982FC-BA73-46D7-AF63-F59E829FF10B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD0982FC-BA73-46D7-AF63-F59E829FF10B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{347F9CD1-F6AD-45DA-A78E-07F31FD66084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{347F9CD1-F6AD-45DA-A78E-07F31FD66084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{347F9CD1-F6AD-45DA-A78E-07F31FD66084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{347F9CD1-F6AD-45DA-A78E-07F31FD66084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2722DE7-6A98-46DE-B587-A81F1839E7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2722DE7-6A98-46DE-B587-A81F1839E7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2722DE7-6A98-46DE-B587-A81F1839E7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2722DE7-6A98-46DE-B587-A81F1839E7EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8671853E-2555-4F7C-9E43-72B3D77556C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8671853E-2555-4F7C-9E43-72B3D77556C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8671853E-2555-4F7C-9E43-72B3D77556C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8671853E-2555-4F7C-9E43-72B3D77556C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90BF74D0-1931-4C40-AEAE-433DA2B4428B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90BF74D0-1931-4C40-AEAE-433DA2B4428B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90BF74D0-1931-4C40-AEAE-433DA2B4428B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90BF74D0-1931-4C40-AEAE-433DA2B4428B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40AFA0E1-C8BB-4EDC-8D07-5BF81C3C13F2} = {343DE19F-5910-4121-AA01-6AEB866EBB2E}
+		{7982696E-C00B-4AC8-80F1-367BFE1ECA7D} = {343DE19F-5910-4121-AA01-6AEB866EBB2E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+Indix.DataIngestion\Indix.DataIngestion\DbInsertHelper.cs:            int limit = 1000; // TODO: Find optimal entities to take for batch processing
+Indix.DataIngestion\Indix.DataIngestion\DbInsertHelper.cs:                        // TODO: verify entitiesAdded vs. entitiesToAdd and throw warning/log if not same
+Indix.DataIngestion\Indix.DataIngestion\DbInsertHelper.cs:                    // TODO: Use AzureSqlExecutionStrategy and Retry
+Indix.DataIngestion\Indix.DataIngestion\Program.cs:            if (args.Length > 0) { limit = int.Parse(args[0]); } // TODO: Handle bad inputs
+Indix.DataIngestion\Indix.DataIngestion\Program.cs:            // TODO: Each file processing is blocking, so create tasks outside of this for loop for better perf
+Indix.DataIngestion\Indix.DataIngestion\Program.cs:                // TODO: Make file reading async, takes 1.5 sec to read 300K lines
+Indix.DataIngestion\Indix.DataIngestion\Program.cs:                // TODO: This is double forloop, taking a lot of time, optimize
+Indix.DataIngestion\Indix.DataIngestion\Program.cs:                // TODO: Need to parallelize this as shows below
+Indix.DataIngestion\Indix.DataIngestion\Program.cs:                // TODO: Get better database tier to make this more effective
+Indix.DataIngestion\Indix.DataIngestion\Program.cs:                int processed = 1; // First line is header. // TODO: Make it configurable
+Indix.DataIngestion\Indix.DataIngestion\Program.cs:                // TODO: Move the files to Finished
+Indix.DataIngestion\packages\Modernizr.2.6.2\Content\Scripts\modernizr-2.6.2.js:    // todo: hypothetically we could be doing an array of tests and use a basic loop here.
+Indix.Plugins\Ribbon1.cs:            // TODO: Get the data in JSON here
+Indix.Plugins\Ribbon1.cs:            // TODO: Configure these magic numbers
+Indix.Plugins\Ribbon1.cs:                    // TODO: Simplify this ugly logic to pick a range
+Indix.Plugins\Ribbon1.cs:                    // TODO: Improve this ugly double-for-loop
+Indix.Plugins\Ribbon1.cs:                // TODO: Configure hardcoded string
+Indix.Plugins\Ribbon1.cs:                    // TODO: Figure out why the following line fails
+Indix.WebApi\obj\Debug\Package\PackageTmp\Scripts\modernizr-2.6.2.js:    // todo: hypothetically we could be doing an array of tests and use a basic loop here.
+Indix.WebApi\Scripts\modernizr-2.6.2.js:    // todo: hypothetically we could be doing an array of tests and use a basic loop here.
